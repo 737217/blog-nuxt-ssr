@@ -1,0 +1,32 @@
+import Vue from 'vue'
+import TinyMCE from 'tinymce-vue-2'
+import 'tinymce/tinymce'
+import 'tinymce/plugins/link/plugin'
+import 'tinymce/plugins/image/plugin'
+import 'tinymce/plugins/advlist/plugin'
+import 'tinymce/plugins/autolink/plugin'
+import 'tinymce/plugins/lists/plugin'
+import 'tinymce/plugins/charmap/plugin'
+import 'tinymce/plugins/print/plugin'
+import 'tinymce/plugins/preview/plugin'
+import 'tinymce/plugins/code/plugin'
+import 'tinymce/plugins/fullscreen/plugin'
+// import 'tinymce/plugins/colorpicker/plugin'
+import 'tinymce/plugins/nonbreaking/plugin'
+import 'tinymce/plugins/paste/plugin'
+import 'tinymce/plugins/table/plugin'
+// import 'tinymce/plugins/textcolor/plugin'
+import 'tinymce/plugins/textpattern/plugin'
+import 'tinymce/plugins/hr/plugin'
+import 'tinymce/plugins/imagetools/plugin'
+import 'tinymce/plugins/wordcount/plugin'
+import 'tinymce/plugins/media/plugin'
+import 'tinymce/plugins/anchor/plugin'
+import Theme from 'tinymce/themes/silver/theme'
+import 'tinymce/skins/ui/oxide/skin.min.css'
+import 'tinymce/skins/ui/oxide/content.min.css'
+
+if (process.env.BROWSER) {
+  window.Theme = Theme
+}
+Vue.component('tiny-mce', TinyMCE)
